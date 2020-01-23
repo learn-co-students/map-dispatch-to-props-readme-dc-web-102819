@@ -10,6 +10,10 @@ export default function shoppingListItemReducer(state = {
         items: state.items.concat(state.items.length)
       });
 
+    case 'SAY_HI':
+      console.log('hi')
+      break;
+
     default:
       console.log(state)
       return state;
